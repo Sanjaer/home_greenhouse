@@ -1,0 +1,12 @@
+/ {
+    aliases {
+        pump0 = &pump0;
+    };
+    gpio_pumps {
+        compatible = "gpio-keys";
+        pump0: pump_0 {
+            gpios = <&gpio0 2 GPIO_ACTIVE_HIGH>;
+            label = "PUMP 0";
+        };
+    };
+};
